@@ -20,7 +20,7 @@ function App() {
       });
 
       
-      if (!itemExists) {
+      if (itemExists===false) {
         if (newItem.necessary) {
           return [newItem, ...updatedItems]; 
         } else {
